@@ -19,6 +19,7 @@ page specifies the page in the illustrations.pdf file to include
 and the width is how much of the text width to take up (0.6 gives
 60% of the page)
 
+> \illustrate{1}{0.6}
 
 # Contributions
 Please feel free to contribute if anything is missing or anything
