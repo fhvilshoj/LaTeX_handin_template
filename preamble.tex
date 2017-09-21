@@ -1,0 +1,72 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+
+\usepackage[english]{babel}
+
+\usepackage[margin=1in]{geometry}  % set the margins to 1in on all sides
+\usepackage{graphicx}              % to include figures
+\usepackage{amsmath}               % great math stuff
+\usepackage{amsfonts}              % for blackboard bold, etc
+\usepackage{amsthm}                % better theorem environments
+\usepackage{enumerate}
+
+\usepackage{tikz}
+\usepackage{colortbl}
+\usepackage[table]{xcolor} 
+
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{fancyref}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+
+\usepackage{todonotes}
+\usepackage{float}
+\usepackage[noend, boxruled, linesnumbered]{algorithm2e}
+
+\usepackage[parfill]{parskip}
+
+% Set up the header and footer
+\pagestyle{fancy}
+
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+\setlength{\parskip}{8pt}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  language=C++,
+  showstringspaces=false,
+  basicstyle=\small\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt                   % how far the line-numbers are from the code
+}
+\lstset{escapechar=@,style=customc}
+
+\newcommand{\xor}{\oplus}
+\newcommand{\myo}{\mathcal{O}}
+\newcommand{\myb}{\mathcal{B}}
+
+\newcommand{\illustrate}[2]{
+  \begin{center}
+    \includegraphics[page=#1,width=#2\textwidth]{graphics/illustrations}
+  \end{center}
+}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

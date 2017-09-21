@@ -1,0 +1,95 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass{article}
+
+\input{preamble}
+
+\lhead{} % Top left header
+\chead{} % Top center header
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page \thepage\ of\ \pageref{LastPage}} % Bottom right footer
+
+\author{The author 1\\The author 2}
+\title{This is the title}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+
+\section{First section}
+\label{sec:first-section}
+
+This is the first section. This section contains stuff like
+
+\begin{itemize}
+\item Items
+\item and more
+\item items
+\end{itemize}
+
+You could also
+
+\begin{enumerate}
+\item Enumerate
+\item Them
+\end{enumerate}
+
+or make descriptions:
+\begin{description}
+\item[This:] is a description
+\item[Where:] things are described
+\end{description}
+
+\section{Figures}
+\label{sec:figures}
+
+This section includes some figures and tables. Note that a
+\texttt{$\backslash$FloatBarrier} draws a line in the sand
+and keeps the figure from floating passed it.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{graphics/cat1}
+  \caption{Cat number one.}
+  \label{fig:cat1}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{graphics/cat2}
+  \caption{Cat number 2}
+  \label{fig:cat2}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \illustrate{1}{0.3}
+  \caption{Imported from graphics/illustrations.pdf using
+    simple macro}
+  \label{fig:import}
+\end{figure}
+
+\FloatBarrier
+
+\section{References}
+\label{sec:references}
+
+This is a section that references to the others. For instance one can
+see \Fref{fig:cat1} - or we can reference to a section number
+\ref{sec:figures} like that. You can also reference an \Fref{eq:roots}
+or Table \ref{tab:greek-letters}
+
+\input{included-section}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
