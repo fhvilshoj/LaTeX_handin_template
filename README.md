@@ -54,6 +54,22 @@ This command could be included in a figure:
 
 ```
 
+# Fast clone
+On Unix based systems one can add the following line to the .bashrc file
+to be able to quickly make a new directory containing this template:
+
+```
+function htemplate() { git clone https://github.com/fhvilshoj/LaTeX_handin_template.git $@ ;}
+```
+
+Then to make a folder in the current location simply run the command:
+
+> htemplate [foldername]
+
+Where **[foldername]** is the folder to place the handin in. It could
+for instance be handin1:
+
+> htemplate handin1
 
 # Contributions
 Please feel free to contribute if anything is missing or anything
