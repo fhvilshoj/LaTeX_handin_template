@@ -55,7 +55,7 @@ This command could be included in a figure:
 ```
 
 # Fast clone
-On Unix based systems one can add the following line to the .bashrc file
+On Unix based systems one can add the following line to the '~/.bashrc' file
 to be able to quickly make a new directory containing this template:
 
 ```
